@@ -64,3 +64,13 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :development, :test do
   gem 'rspec-rails'
 end
+
+gem 'bootstrap'
+
+gem 'jquery-rails'
+
+gem 'popper_js'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether'
+end
