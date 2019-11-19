@@ -82,3 +82,5 @@ gem 'simple_form'
 gem 'ruby-apicalypse'
 
 gem 'excon'
+
+gem 'unirest'
