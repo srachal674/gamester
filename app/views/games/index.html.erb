@@ -1,1 +1,8 @@
-<h1><%= @games.inspect %></h1>
+<% @games.each do |game| %>
+  <div class="booyah-box">
+    <h1><%= game.name %></h1><br />
+    <p><%= game.description %></p><br />
+    
+  </div>
+  <hr />
+<% end %>
