@@ -74,3 +74,9 @@ gem 'popper_js'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether'
 end
+
+gem 'will_paginate'
+
+gem 'simple_form'
+
+gem 'ruby-apicalypse'
