@@ -16,7 +16,7 @@
 
 /* unvisited link */
 a:link {
-  color: #00134d;
+  color: #0641f3;
 }
 
 /* visited link */
@@ -68,16 +68,25 @@ body {
   font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 }
 
-.navbar {
+.navbar .nav {
+  background-color: rgb(104, 161, 247);
+  box-shadow: 8px 8px 12px #2a2a2a;
+  margin-bottom: 0;
+}
+
+.navbar-nav {
   background-color: #1A5CDA;
   box-shadow: 8px 8px 12px #2a2a2a;
   margin-bottom: 0;
 }
 
-.navbar-inverse .navbar-brand {
+.navbar-brand {
   color: #97C8F3;
   font-family: 'chunkfiveroman', cursive;
-  font-size: 26px;  
+  font-size: 26px; 
+  background-color: #1A5CDA;
+  box-shadow: 8px 8px 12px #2a2a2a;
+  margin-bottom: 0; 
 }
 
 .flickr_pagination {
