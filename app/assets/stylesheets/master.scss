@@ -4,7 +4,7 @@
   -moz-box-shadow: 1px 1px 2px 0 #204060;
   -webkit-box-shadow: 1px 1px 2px 0 #204060;
   box-shadow: 8px 8px 12px 0 #204060;
-  background: image_url('brushed_alu_dark.png');
+  background: image_url('box_bkg.png');
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top: 10px;
@@ -61,13 +61,13 @@ h4{
 }
 
 body {
-  background: image_url('brushed_alu_dark.png');
+  background: image_url('home_bkg.jpg');
   /* Times New Roman-based stack */
   font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 }
 
 .navbar {
-  background: image_url('spiration_dark.png');
+  background-color: #1A5CDA;
   box-shadow: 8px 8px 12px #2a2a2a;
   margin-bottom: 0;
 }
