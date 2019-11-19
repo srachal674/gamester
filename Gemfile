@@ -84,3 +84,5 @@ gem 'ruby-apicalypse'
 gem 'excon'
 
 gem 'unirest'
+
+gem 'font-awesome-rails'
