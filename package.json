@@ -1,5 +1,7 @@
 {
   "name": "Gamester",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "apicalypse": "^0.1.6"
+  }
 }

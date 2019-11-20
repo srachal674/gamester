@@ -86,3 +86,5 @@ gem 'excon'
 gem 'unirest'
 
 gem 'font-awesome-rails'
+
+gem 'devise'
