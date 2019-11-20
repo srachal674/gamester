@@ -3,5 +3,8 @@
     <h1><%= game.name %></h1>
     <p><%= game.description %></p><br />
     
+    <% if game.user.present? %>
+      <small><%= game.user.email %></small>
+    <% end %>
   </div>
 <% end %>
