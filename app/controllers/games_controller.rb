@@ -1,5 +1,5 @@
 class GamesController < ApplicationController
-  
+
   def index
     @games = Game.all
   end
@@ -19,6 +19,7 @@ class GamesController < ApplicationController
   def api(url)
     
     api = Apicalypse.new("https://myapi.com/foobar")
+  end
 
   def Apicalypse
     api_endpoint = 'https://api-v3.igdb.com/games'
