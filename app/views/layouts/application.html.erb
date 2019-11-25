@@ -32,10 +32,11 @@
             <%= link_to 'Sign Up', new_user_registration_path, class: 'nav-link' %>
           </li>
         <% end %>
-        <form class="form-inline" action="/action_page.php">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-success" type="submit">Search</button>
-        </form>
+        <!-- <div class="form-inline">
+          <input id="Search_team" class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button id="submit" class="btn btn-primary">Id</button>
+          <%= link_to 'Search', search_page_path, class: 'nav-link' %>
+        </div> -->
       </ul>
     </nav>
 
@@ -46,6 +47,23 @@
     <% if alert.present? %>
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
+  
+  <script>
+  /*
+    var button = document.getElementById("submit")
+    console.log(button)
+    button.addEventListener("click", handleClick)
+
+    function handleClick() {
+      var searchTeam = document.getElementById("Search_team")
+      console.log('Searching for... ', searchTeam.value);
+      fetch(`https://api.collegefootballdata.com/games/teams?year=2019&team=${searchTeam.value}`)
+        .then(response => response.json())
+        .then(data => {
+          console.log('Results: ', data);
+        })
+    }*/
+  </script>
 
     <%= yield %>
   </body>
