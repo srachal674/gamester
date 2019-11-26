@@ -1,6 +1,6 @@
 @import "bootstrap";
 @import "font-awesome";
-@import url('https://fonts.googleapis.com/css?family=Kodchasan|Montaga|Niconne|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette|Quicksand|Raleway&display=swap');
 
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #204060;
@@ -65,9 +65,9 @@ h4{
 }
 
 body {
-  background: image_url('home_bkg.jpg');
+  background: image_url('#');
   background-size: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .navbar .navbar-nav {
@@ -80,7 +80,7 @@ body {
 
 .navbar-brand {
   color: #97C8F3;
-  font-family: 'chunkfiveroman', cursive;
+  font-family: 'Courgette', cursive;
   font-size: 26px; 
   background-color: rgb(89, 146, 250);
   box-shadow: 8px 8px 12px #2a2a2a;
@@ -89,8 +89,8 @@ body {
 }
 
 .slogan {
-  text-align: right;
-  font-family: 'Roboto', cursive;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
   font-size: 24px;
 }
 

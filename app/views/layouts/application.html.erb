@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    
     <nav class="navbar navbar-expand-sm bg-light">
     <%= link_to 'Gamester', root_path, class: 'navbar-brand' %>
       <ul class="navbar-nav">
@@ -32,16 +33,14 @@
             <%= link_to 'Sign Up', new_user_registration_path, class: 'nav-link' %>
           </li>
         <% end %>
-        <!-- <div class="form-inline">
-          <input id="Search_team" class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button id="submit" class="btn btn-primary">Id</button>
-          <%= link_to 'Search', search_page_path, class: 'nav-link' %>
-        </div> -->
-        <div class="slogan">Search and chat about your favorite college football team.</div> 
+        <div class="form-inline">
+          <%= link_to 'Team Search', search_page_path, class: 'nav-link' %>
+        </div>    
       </ul>
       <br/>
-      
     </nav>
+  
+  <div class="slogan">Search and chat about your favorite college football team.</div> 
 
     <% if notice.present? %>
       <p class="alert alert-info"><%= notice %></p>
