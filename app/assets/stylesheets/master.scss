@@ -30,17 +30,17 @@
 
 /* unvisited link */
 a:link {
-  color: #00134d;
+  color: gray;
 }
 
 /* visited link */
 a:visited {
-  color: #00134d;
+  color: white;
 }
 
 /* mouse over link */
 a:hover {
-  color: #003366;
+  color: #96cbff;
 }
 
 /* selected link */
@@ -84,18 +84,19 @@ body {
 }
 
 .navbar .navbar-nav {
-  background-color: rgb(89, 146, 250);
+  background-color: #32431F;
   box-shadow: 8px 8px 12px #2a2a2a;
   margin-bottom: 0 !important;
   padding: 0px !important;
   justify-content: center;
+  color: white;
 }
 
 .navbar-brand {
-  color: #97C8F3;
   font-family: 'Courgette', cursive;
-  font-size: 26px; 
-  background-color: rgb(89, 146, 250);
+  font-size: 26px;
+  color: white; 
+  background-color: #32431F;
   box-shadow: 8px 8px 12px #2a2a2a;
   margin-bottom: 0px !important;
   padding: 0px !important; 
