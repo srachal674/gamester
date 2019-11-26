@@ -6,7 +6,20 @@
   -moz-box-shadow: 1px 1px 2px 0 #204060;
   -webkit-box-shadow: 1px 1px 2px 0 #204060;
   box-shadow: 8px 8px 12px 0 #204060;
-  background: image_url('box_bkg2.png');
+  background: image_url('box_bkg.jpg');
+  background-size: 35%;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+.booyah-box2 {
+  -moz-box-shadow: 1px 1px 2px 0 #204060;
+  -webkit-box-shadow: 1px 1px 2px 0 #204060;
+  box-shadow: 8px 8px 12px 0 #204060;
+  background: image_url('box_bkg.jpg');
   background-size: 35%;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
@@ -65,8 +78,8 @@ h4{
 }
 
 body {
-  background: image_url('#');
-  background-size: 100%;
+  background: image_url('home_bkg');
+  background-size: 75%;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -89,9 +102,16 @@ body {
 }
 
 .slogan {
+  color: black;
   text-align: center;
+  font-weight: bold;
   font-family: 'Quicksand', sans-serif;
-  font-size: 24px;
+  font-size: 28px;
+}
+
+.frosty {
+  background: rgba(143, 143, 143, .8);
+  color: white;
 }
 
 // .flickr_pagination {
