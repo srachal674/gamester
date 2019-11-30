@@ -16,29 +16,35 @@ class GamesController < ApplicationController
   end
 
   def show
-    @game = Game.find(params(:search))
+    @game = Game.find(game_params(:id))
   end
 
   def edit
-    @game = Game.find(params[:id])
+    @game = Game.find(game_params[:id])
   end
 
   def update
-    @game = Game.find(params[:id])
+    @game = Game.find(game_params[:id])
     @game.update_attributes(game_params)
+    redirect_to root_path
+  end
+
+  def destroy
+    @game = Game.find(game_params[:id])
+    @game.destroy
     redirect_to root_path
   end
 
   private
 
-  def search  
-    if params[:search].blank?  
-      redirect_to(root_path, alert: "Empty field!") and return  
-    else  
-      @game = params[:search].downcase  
-      @results = Store.all.where("lower(name) LIKE :search", search: @game)  
-    end  
-  end
+  # def search  
+  #   if params[:search].blank?  
+  #     redirect_to(root_path, alert: "Empty field!") and return  
+  #   else  
+  #     @game = params[:search].downcase  
+  #     @results = Store.all.where("lower(name) LIKE :search", search: @game)  
+  #   end  
+  # end
 
   def game_params
     params.require(:game).permit(:name, :description)
