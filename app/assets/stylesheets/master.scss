@@ -30,7 +30,7 @@
 
 /* unvisited link */
 a:link {
-  color: gray;
+  color: rgb(98, 200, 255);
 }
 
 /* visited link */
@@ -84,8 +84,8 @@ body {
 }
 
 .navbar .navbar-nav {
-  background-color: #32431F;
-  box-shadow: 8px 8px 12px #2a2a2a;
+  background-color: rgb(4, 13, 118);
+  box-shadow: 8px 8px 12px #060606;
   margin-bottom: 0 !important;
   padding: 0px !important;
   justify-content: center;
@@ -96,8 +96,8 @@ body {
   font-family: 'Courgette', cursive;
   font-size: 26px;
   color: white; 
-  background-color: #32431F;
-  box-shadow: 8px 8px 12px #2a2a2a;
+  background-color: rgb(4, 13, 118);
+  box-shadow: 8px 8px 12px #060606;
   margin-bottom: 0px !important;
   padding: 0px !important; 
 }
