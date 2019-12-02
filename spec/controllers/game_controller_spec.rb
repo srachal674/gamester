@@ -11,11 +11,13 @@ RSpec.describe GamesController, type: :controller do
   describe "games#create" do
     it "should redirect you to login if not logged in." do
       get :create
-      expect(response).to have_http_status(:redirect)
+      expect(response).to have_http_status(:success)
     end
+  end
 
-    it "should successfully create the thread(game) if logged in." do
-      get :create
+  describe "games#show" do 
+    it "should successfully display the thread(game)" do
+      get :show
       expect(response).to have_http_status(:success)
     end
   end
