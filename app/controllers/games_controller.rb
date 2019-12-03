@@ -11,8 +11,12 @@ class GamesController < ApplicationController
   end
 
   def create
-    current_user.games.create(game_params)
-    redirect_to root_path
+    @game = current_user.games.create(game_params)
+    if @game.valid?
+      redirect_to root_path
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   def show
@@ -41,5 +45,4 @@ class GamesController < ApplicationController
   def game_params
     params.require(:game).permit(:name, :description)
   end
-
 end
