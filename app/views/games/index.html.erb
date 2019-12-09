@@ -1,6 +1,6 @@
 <% @games.each do |game| %>
   <div class="booyah-box col-10 offset-1">
-     <h1><%= link_to game.name, game_path(game) %></h1><br />
+     <h1><%= game.name %></h1><br />
     <p><%= game.description %></p><br />
     <%# <div class="float-right">
       <%= link_to 'Edit', edit_game_path(@games), class: 'btn btn-primary'%>
