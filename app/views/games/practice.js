@@ -1,12 +1,3 @@
-<div class="booyah-box2 col-10 offset-1">
-    <input id="Search_team" class="form-control mr-sm-2" type="text" placeholder="Search Team">
-    <button id="submit" class="btn btn-primary">Search</button>
-</div>
-
-<div id="resultsBox" class="booyah-box col-10 offset-1">
-    <p>Results</p>
-</div>
-
 <script>
 var button = document.getElementById("submit")
 console.log(button)
@@ -20,6 +11,21 @@ function handleClick() {
 
 function getTeamGameStats(team) {
     fetch(`https://api.collegefootballdata.com/games/teams?year=2019&team=${team}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log('Results: ', data);
+            renderResults(data);
+        })
+}
+
+function handleClick() {
+    var searchWeek = document.getElementById("Search_week")
+    console.log('Searching for... ', searchWeek.value);
+    getTeamGameStats(searchWeek.value)
+}
+
+function getTeamGameStats(team) {
+    fetch(`https://any-api.com/collegefootballdata_com/collegefootballdata_com/console/games/getGames`)
         .then(response => response.json())
         .then(data => {
             console.log('Results: ', data);
